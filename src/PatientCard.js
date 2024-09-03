@@ -13,12 +13,6 @@ export default function PatientCard(props) {
         console.log("editting");
         props.patientclicked(props.id,"edit")
 
-        // console.log(event.target.parentElement.parentElement.parentElement.parentElement);
-        // var element = document.getElementsByName('name')['0'];
-        // element.value = "drv";
-        // var event = new Event('change');
-        // element.dispatchEvent(event);
-        // props.handleChange(event);
     }
     function delHandler(event){
         console.log("pat deleting");
@@ -30,7 +24,7 @@ export default function PatientCard(props) {
       <td>
         <div className="user-info">
           <div className="user-info__img">
-            <img src={props.gender=="Male"? require("./img/prof.png" ): require("./img/female.jpeg" )} alt="User Img" />
+            <img src={props.gender==="Male"? require("./img/prof.png" ): require("./img/female.jpeg" )} alt="User Img" />
           </div>
           <div className="user-info__basic">
             <h5 className="mb-0">{props.name}</h5>
@@ -39,7 +33,7 @@ export default function PatientCard(props) {
         </div>
       </td>
       <td>
-        <span className={props.stat=="Consult" ? "btn btn-success":"btn btn-primary"}>{props.stat}</span>
+        <span className={props.stat==="Consult" ? "btn btn-success":"btn btn-primary"}>{props.stat}</span>
       </td>
       <td>
         <h6 className="mb-0">{props.time}</h6>
