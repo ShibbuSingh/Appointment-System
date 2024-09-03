@@ -9,7 +9,7 @@ export default function Form(props) {
       <div className="container register-form">
         <div className="form">
           <div className="note">
-            <p>Welcome to Gradious Doctor Appointment Booking</p>
+            <p>Welcome to Doctor Appointment Booking</p>
           </div>
 
           <div className="form-content">

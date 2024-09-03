@@ -38,7 +38,7 @@ function App() {
     for(let key in formData)
     {
             console.log(key)
-            if(formData[key]=="" && key!='edit')
+            if(formData[key]==="" && key!=='edit')
             {
                     console.log(key+ formData[key])
                     alert("Missing Field in the Form!!")
@@ -78,13 +78,13 @@ function App() {
 
   function patientclicked(id,work){
     console.log("here")
-    if(work=="del"){
+    if(work==="del"){
       deletepat(id)
       return
     }
     for(let i of pats){
       // console.log(i)
-      if(i.id == id)
+      if(i.id === id)
       {
         console.log(i)
         setFormData({
